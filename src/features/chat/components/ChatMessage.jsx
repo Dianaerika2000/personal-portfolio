@@ -4,7 +4,7 @@ import ContactCard from "./ContactCard";
 import CvCard from "./CvCard";
 import ProfileCard from "./ProfileCard";
 import ProjectCard from "./ProjectCard";
-import ProjectDetailsCard from "./ProjectDetailsCard";
+// import ProjectDetailsCard from "./ProjectDetailsCard";
 import StackGrid from "./StackGrid";
 
 const TypingIndicator = () => (
@@ -62,7 +62,7 @@ const ChatMessage = ({ text, from, data, typingDelay, onRendered }) => {
                   </div>
                 )}
 
-                {data.links && <ProjectDetailsCard {...data} />}
+                {/* {data.links && <ProjectDetailsCard {...data} />} */}
 
                 {data.technologies && (
                   <StackGrid
