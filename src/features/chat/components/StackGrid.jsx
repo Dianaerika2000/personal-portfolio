@@ -1,0 +1,83 @@
+import {
+  siJavascript,
+  siTypescript,
+  siPhp,
+  siReact,
+  siLaravel,
+  siNestjs,
+  siAngular,
+  siFlutter,
+  siPostgresql,
+  siMysql,
+  siFigma,
+  siJira,
+  siMoodle,
+} from "simple-icons/icons";
+
+const iconsMap = {
+  JavaScript: siJavascript,
+  TypeScript: siTypescript,
+  PHP: siPhp,
+  React: siReact,
+  Laravel: siLaravel,
+  NestJS: siNestjs,
+  Angular: siAngular,
+  Flutter: siFlutter,
+  PostgreSQL: siPostgresql,
+  MySQL: siMysql,
+  Figma: siFigma,
+  Jira: siJira,
+  Moodle: siMoodle,
+};
+
+const StackGrid = ({ technologies }) => {
+  const containerClasses =
+    "bg-white dark:bg-gray-900 rounded-lg p-3 flex flex-col items-center shadow-sm dark:shadow-[0_0_6px_1px_rgba(139,92,246,0.2)] dark:border dark:border-purple-900/2";
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      {technologies.map(({ name }) => {
+        const icon = iconsMap[name];
+
+        if (!icon) {
+          return (
+            <div key={name} className={containerClasses}>
+              <span className="text-red-500 text-sm mb-2">Logo no encontrado</span>
+              <span className="text-gray-900 dark:text-gray-100 text-sm">{name}</span>
+            </div>
+          );
+        }
+
+        const svgMarkup = `
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            fill="#${icon.hex}"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            aria-label="${name}"
+            title="${name}"
+          >
+            ${icon.svg}
+          </svg>
+        `;
+
+        return (
+          <div key={name} className={containerClasses}>
+            <div
+              className="mb-2"
+              role="img"
+              aria-label={name}
+              title={name}
+              dangerouslySetInnerHTML={{ __html: svgMarkup }}
+            />
+            <span className="text-gray-900 dark:text-gray-100 text-sm">{name}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default StackGrid;

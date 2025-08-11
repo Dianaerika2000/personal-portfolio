@@ -1,0 +1,151 @@
+{
+  "intro": {
+    "type": "text",
+    "text": "¡Hola! Soy Didibu 🤖, tu guía por mi portafolio. ¿Quieres conocerme, ver mis proyectos o explorar mi stack?",
+    "suggestions": ["¿Quién eres?", "Ver proyectos", "Ver stack tecnológico", "¿Cómo puedo contactarte?", "¿Me pasas tu CV?"]
+  },
+  "about": {
+    "userMessage": "¿Quién eres?",
+    "responses": [
+      {
+        "type": "profile", 
+        "name": "Diana Montaño",
+        "role": "Frontend Developer",
+        "image": "/images/profile/profile.png",
+        "description": "¡Hola! Soy Diana 👋, desarrolladora frontend apasionada por crear experiencias web modernas y creativas"
+      }
+    ],
+    "suggestions": ["Ver proyectos", "Ver stack tecnológico", "¿Cómo puedo contactarte?", "¿Me pasas tu CV?"]
+  },
+  "projects": {
+    "userMessage": "Ver proyectos",
+    "responses": [
+      {
+        "type": "text",
+        "text": "Estos son algunos de mis proyectos destacados 👇"
+      },
+      {
+        "type": "projectList",
+        "items": [
+          {
+            "id": "educonnect",
+            "title": "EduConnect",
+            "description": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "image": "/images/projects/educonnect/cover.png",
+            "detailsCommand": "Muéstrame detalles del proyecto EduConnect"
+          },
+          {
+            "id": "portfolio",
+            "title": "Mi Portafolio",
+            "description": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "image": "/images/projects/educonnect/cover.png",
+            "detailsCommand": "Muéstrame detalles del proyecto Mi Portafolio"
+          }
+        ]
+      }
+    ],
+    "suggestions": ["Ver stack tecnológico", "¿Cómo puedo contactarte?", "¿Me pasas tu CV?"]
+  },
+  "projectDetailsEduConnect": {
+    "userMessage": "Muéstrame detalles del proyecto EduConnect",
+    "responses": [
+      {
+        "type": "text",
+        "text": "Este es el proyecto **EduConnect**, desarrollado con React + Tailwind..."
+      },
+      {
+        "type": "projectDetails",
+        "technologies": ["React", "Tailwind", "Firebase"],
+        "links": {
+          "demo": "https://educonnect-demo.vercel.app",
+          "repo": "https://github.com/diana/educonnect"
+        },
+        "gallery": ["/images/projects/educonnect1.png", "/images/projects/educonnect2.png"]
+      }
+    ],
+    "suggestions": ["Ver proyectos", "Ver stack tecnológico", "¿Cómo puedo contactarte?", "¿Me pasas tu CV?"]
+  },
+  "stack": {
+    "userMessage": "Ver stack tecnológico",
+    "responses": [
+      {
+        "type": "text",
+        "text": "Este es mi stack tecnológico con el que trabajo habitualmente 👇"
+      },
+      {
+        "type": "stackGrid",
+        "technologies": [
+          { "name": "JavaScript" },
+          { "name": "TypeScript" },
+          { "name": "PHP" },
+          { "name": "React" },
+          { "name": "Laravel" },
+          { "name": "NestJS" },
+          { "name": "Angular" },
+          { "name": "Flutter" },
+          { "name": "PostgreSQL" },
+          { "name": "MySQL" },
+          { "name": "Figma" },
+          { "name": "Jira" },
+          { "name": "Moodle" }
+        ]
+      }
+    ],
+    "suggestions": ["Ver proyectos", "¿Cómo puedo contactarte?", "¿Me pasas tu CV?"]
+  },
+  "contact": {
+    "userMessage": "¿Cómo puedo contactarte?",
+    "responses": [
+      {
+        "type": "text",
+        "text": "¡Claro! Aquí tienes mis datos de contacto 👇"
+      },
+      {
+        "type": "contactInfo",
+        "channels": [
+          {
+            "type": "Email",
+            "label": "dianaerika.montano16@gmail.com",
+            "url": "mailto:dianaerika.montano16@gmail.com",
+            "action": "copy"
+          },
+          {
+            "type": "LinkedIn",
+            "label": "Diana Montaño",
+            "url": "https://www.linkedin.com/in/diana-monta%C3%B1o-6510a7186/",
+            "action": "open"
+          },
+          {
+            "type": "GitHub",
+            "label": "Dianaerika2000",
+            "url": "https://github.com/Dianaerika2000",
+            "action": "open"
+          }
+        ]
+      }
+    ],
+    "suggestions": ["Ver proyectos", "Ver stack tecnológico", "¿Me pasas tu CV?"]
+  },
+  "cv": {
+    "userMessage": "¿Me pasas tu CV?",
+    "responses": [
+      {
+        "type": "text",
+        "text": "¡Por supuesto! Puedes descargarlo directamente aquí 👇"
+      },
+      {
+        "type": "cvCard",
+        "title": "Currículum Vitae – Diana Montaño",
+        "fileType": "Archivo PDF",
+        "downloadUrl": "/files/DianaMontaño_cv_ES.pdf",
+        "viewUrl": "/files/DianaMontaño_cv_ES"
+      }
+    ],
+    "suggestions": ["Ver proyectos", "Ver stack tecnológico", "¿Cómo puedo contactarte?"]
+  },
+  "fallback": {
+    "type": "text",
+    "botResponse": "Aún no soy tan inteligente 😅, pero puedes usar los botones de abajo para explorar mi portafolio.",
+    "suggestions": ["¿Quién eres?", "Ver proyectos", "Ver stack tecnológico", "¿Cómo puedo contactarte?", "¿Me pasas tu CV?"]
+  }
+}
