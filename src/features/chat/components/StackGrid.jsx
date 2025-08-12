@@ -35,7 +35,7 @@ const StackGrid = ({ technologies }) => {
     "bg-white dark:bg-gray-900 rounded-lg p-3 flex flex-col items-center shadow-sm dark:shadow-[0_0_6px_1px_rgba(139,92,246,0.2)] dark:border dark:border-purple-900/2";
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4">
       {technologies.map(({ name }) => {
         const icon = iconsMap[name];
 
