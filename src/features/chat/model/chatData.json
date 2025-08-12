@@ -106,19 +106,22 @@
         "channels": [
           {
             "type": "Email",
-            "label": "dianaerika.montano16@gmail.com",
+            "label": "Email",
+            "subtitle": "dianaerika.montano16@gmail.com",
             "url": "mailto:dianaerika.montano16@gmail.com",
             "action": "copy"
           },
           {
             "type": "LinkedIn",
-            "label": "Diana Montaño",
+            "label": "LinkedIn",
+            "subtitle": "diana-montaño-6510a7186",
             "url": "https://www.linkedin.com/in/diana-monta%C3%B1o-6510a7186/",
             "action": "open"
           },
           {
             "type": "GitHub",
-            "label": "Dianaerika2000",
+            "label": "GitHub",
+            "subtitle": "Dianaerika2000",
             "url": "https://github.com/Dianaerika2000",
             "action": "open"
           }
