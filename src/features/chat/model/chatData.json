@@ -8,11 +8,12 @@
     "userMessage": "¿Quién eres?",
     "responses": [
       {
-        "type": "profile", 
+        "type": "profile",
         "name": "Diana Montaño",
-        "role": "Frontend Developer",
+        "role": "Full Stack Developer",
         "image": "/images/profile/profile.png",
-        "description": "¡Hola! Soy Diana 👋, desarrolladora frontend apasionada por crear experiencias web modernas y creativas"
+        "description": "¡Hola! Soy Diana 👋, desarrolladora full stack apasionada por crear soluciones web y móviles modernas y funcionales. Disfruto trabajar con tecnologías que mejoren procesos y brinden experiencias de usuario memorables.",
+        "experience": "Casi 2 años construyendo aplicaciones de principio a fin, combinando frontend atractivo, backend sólido y bases de datos eficientes."
       }
     ],
     "suggestions": ["Ver proyectos", "Ver stack tecnológico", "¿Cómo puedo contactarte?", "¿Me pasas tu CV?"]
