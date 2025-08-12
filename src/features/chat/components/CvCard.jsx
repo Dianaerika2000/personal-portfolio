@@ -1,12 +1,14 @@
 const buttonClassNames =
-  "bg-purple-600 text-white px-4 py-1 rounded-lg hover:bg-purple-700 transition-colors";
+  "bg-purple-600 text-white px-4 py-1 rounded-lg hover:bg-purple-700 transition-colors text-sm sm:text-base text-center sm:text-left w-full sm:w-auto";
 
 const CvCard = ({ title, fileType, downloadUrl }) => {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-lg p-4 space-y-2">
-      <h4 className="text-gray-900 dark:text-gray-100 font-semibold">{title}</h4>
-      <p className="text-sm text-gray-600 dark:text-gray-400">{fileType}</p>
-      <div className="flex gap-3">
+    <div className="p-2 sm:p-4 space-y-2 max-w-xs sm:max-w-sm md:max-w-md mx-auto">
+      <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 dark:text-gray-100 text-center">
+        {title}
+      </h3>
+      <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">{fileType}</p>
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
         <a
           href={downloadUrl}
           download

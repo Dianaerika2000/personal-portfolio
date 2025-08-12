@@ -40,7 +40,7 @@ const ChatMessage = ({ text, from, data, typingDelay, onRendered }) => {
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       <div
-        className={`max-w-[60%] p-3 shadow-sm transition-colors ${
+        className={`max-w-[80%] p-3 shadow-sm transition-colors ${
           isUser ? userStyles : botStyles
         }`}
       >
