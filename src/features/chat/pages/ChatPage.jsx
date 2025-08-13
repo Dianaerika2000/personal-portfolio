@@ -116,6 +116,9 @@ const ChatPage = () => {
                     containerRef.current.scrollTop = containerRef.current.scrollHeight;
                   }
                 }}
+                onViewMore={(id, title) => {
+                  sendMessage(`Muéstrame detalles del proyecto ${title}`);
+                }}
               />
             </div>
           );

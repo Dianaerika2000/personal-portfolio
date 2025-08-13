@@ -4,7 +4,7 @@ import ContactCard from "./ContactCard";
 import CvCard from "./CvCard";
 import ProfileCard from "./ProfileCard";
 import ProjectCard from "./ProjectCard";
-// import ProjectDetailsCard from "./ProjectDetailsCard";
+import ProjectDetailsCard from "./ProjectDetailsCard";
 import StackGrid from "./StackGrid";
 
 const TypingIndicator = () => (
@@ -15,7 +15,7 @@ const TypingIndicator = () => (
   </div>
 );
 
-const ChatMessage = ({ text, from, data, typingDelay, onRendered }) => {
+const ChatMessage = ({ text, from, data, typingDelay, onRendered, onViewMore }) => {
   const isUser = from === "user";
   const [showContent, setShowContent] = useState(isUser);
 
@@ -40,9 +40,8 @@ const ChatMessage = ({ text, from, data, typingDelay, onRendered }) => {
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       <div
-        className={`max-w-[80%] p-3 shadow-sm transition-colors ${
-          isUser ? userStyles : botStyles
-        }`}
+        className={`max-w-[80%] p-3 shadow-sm transition-colors ${isUser ? userStyles : botStyles
+          }`}
       >
         {!showContent ? (
           <TypingIndicator />
@@ -57,12 +56,17 @@ const ChatMessage = ({ text, from, data, typingDelay, onRendered }) => {
                 {data.type === "projectList" && data.items?.length > 0 && (
                   <div className="space-y-3">
                     {data.items.map((project) => (
-                      <ProjectCard key={project.id} {...project} />
+                      <ProjectCard
+                        key={project.id}
+                        {...project}
+                        onViewMore={(id, title) => onViewMore?.(id, title)}
+                      />
                     ))}
                   </div>
                 )}
 
-                {/* {data.links && <ProjectDetailsCard {...data} />} */}
+                {/* 👇 nuevo: mostrar ficha de detalle */}
+                {data.type === "projectDetail" && <ProjectDetailsCard details={data} />}
 
                 {data.technologies && (
                   <StackGrid
