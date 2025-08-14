@@ -8,43 +8,59 @@
       "Generación de certificados en PDF.",
       "Interfaz moderna y responsiva."
     ],
-    "role": "Desarrolladora principal del sistema.",
+    "role": "Desarrolladora principal del software.",
     "technologies": [
-      "NestJS",
-      "TypeScript",
-      "ReactJS",
-      "Vite",
-      "PostgreSQL",
-      "TailwindCSS"
+      { "name": "NestJS" },
+      { "name": "TypeScript" },
+      { "name": "React" },
+      { "name": "Vite", "icon": "/images/stack/vite.svg" },
+      { "name": "PostgreSQL" },
+      { "name": "TailwindCSS" }
     ],
     "year": 2024,
     "image": "/images/projects/certificacion-aulas-virtuales/detail.png"
   },
   "cartas-cronogramas": {
-    "title": "Automatización de Cartas Descriptivas y Cronogramas",
+    "title": "Cartas Descriptivas y Cronogramas",
     "longDescription": "Herramienta que automatiza la creación y actualización de cartas descriptivas y cronogramas académicos para el DEDTE de la UAGRM. El software permite cargar datos desde archivos Excel y genera automáticamente el código HTML y CSS necesario para integrarlos en la plataforma Moodle, eliminando el proceso repetitivo que se hacía manualmente cada semestre.",
     "features": [
       "Carga de datos desde Excel.",
-      "Generación automática de HTML y CSS.",
-      "Integración directa con Moodle.",
+      "Recalculo automático de fechas del cronograma.",
+      "Generación automática de HTML y CSS optimizado para Moodle.",
       "Reducción del trabajo manual semestral."
     ],
     "role": "Desarrolladora fullstack.",
-    "technologies": ["PHP", "Laravel", "PostgreSQL", "Livewire", "HTML", "CSS"],
+    "technologies": [
+      { "name": "PHP" },
+      { "name": "Laravel" },
+      { "name": "Livewire" },
+      { "name": "PostgreSQL" },
+      { "name": "HTML" },
+      { "name": "CSS" }
+    ],
     "year": 2024,
     "image": "/images/projects/cartas-cronogramas/detail.png"
   },
   "uagrm-virtual": {
     "title": "UAGRM Virtual",
-    "longDescription": "Aplicación móvil desarrollada para las carreras virtuales de la UAGRM, diseñada para mejorar la comunicación y el acceso a información académica. La app consume la API oficial de Moodle para conectarse con los servidores institucionales, permitiendo a estudiantes y docentes consultar calificaciones, tareas, foros y recibir notificaciones en tiempo real sobre chats y actividades académicas.",
+    "longDescription": "Aplicación móvil desarrollada para las carreras virtuales de la UAGRM, diseñada para mejorar la comunicación y el acceso a información académica. La app consume la API oficial de Moodle para conectarse con los servidores institucionales, permitiendo a estudiantes y docentes consultar el contenido de cada materia, incluyendo tareas, foros y recibir notificaciones en tiempo real sobre chats y actividades académicas.",
     "features": [
       "Integración con API oficial de Moodle.",
       "Notificaciones en tiempo real.",
       "Acceso a información académica actualizada.",
+      "Backend con historial de notificaciones y cron job para seguimiento automático.",
       "Diseño optimizado para móviles."
     ],
     "role": "Desarrolladora de frontend y backend.",
-    "technologies": ["Flutter", "Dart", "REST API", "Firebase cloud messaging", "Laravel", "PHP", "PostgreSQL"],
+    "technologies": [
+      { "name": "Flutter" },
+      { "name": "Dart" },
+      { "name": "Laravel" },
+      { "name": "PHP" },
+      { "name": "PostgreSQL" },
+      { "name": "Firebase", "icon": "/images/stack/firebase.svg" },
+      { "name": "Moodle" }
+    ],
     "year": 2024,
     "image": "/images/projects/uagrm-virtual/detail.png"
   },
@@ -55,16 +71,21 @@
       "Desarrollo backend con NestJS.",
       "Colaboración en frontend con Angular.",
       "Trabajo en equipo ágil bajo Scrum.",
-      "Participación en implementación de funcionalidades críticas."
+      "Participación en implementación de funcionalidades."
     ],
     "role": "Pasante de desarrollo de software.",
-    "technologies": ["NestJS", "TypeScript", "Angular"],
+    "technologies": [
+      { "name": "NestJS" },
+      { "name": "Angular"},
+      { "name": "TypeScript" },
+      { "name": "MySql" }
+    ],
     "year": 2023,
     "image": "/images/projects/dragon-challenge/detail.png"
   },
   "ecommerce-comida-tipica-suarez": {
-    "title": "Ecommerce para Pedido en Línea – Comida Típica Suárez",
-    "longDescription": "Proyecto desarrollado como parte del bootcamp Frontend Mujeres 360. Consistió en un mini ecommerce para un restaurante local muy conocido, 'Comida Típica Suárez'. El sistema permite explorar el menú, agregar platos al carrito y enviar el pedido directamente vía WhatsApp al restaurante. La información del menú fue tomada de sus redes sociales para simular un entorno real.",
+    "title": "Ecommerce para Pedido en Línea",
+    "longDescription": "Proyecto desarrollado como parte del bootcamp Frontend Mujeres 360. Consistió en un mini e-commerce para un restaurante local muy conocido en Santa Cruz de la Sierra, Bolivia: 'Comida Típica Suárez'. El software permite explorar el menú, agregar platos al carrito y enviar el pedido directamente vía WhatsApp al restaurante. La información del menú fue tomada de sus redes sociales para simular un entorno real.",
     "features": [
       "Visualización del menú completo del restaurante.",
       "Carrito de compras para seleccionar platos.",
@@ -72,7 +93,13 @@
       "Interfaz amigable y adaptada para móviles."
     ],
     "role": "Desarrolladora frontend.",
-    "technologies": ["ReactJS", "JavaScript", "Bootstrap"],
+    "technologies": [
+      { "name": "React" },
+      { "name": "JavaScript" },
+      { "name": "Bootstrap" },
+      { "name": "HTML" },
+      { "name": "CSS" }
+    ],
     "year": 2023,
     "image": "/images/projects/ecommerce-comida-tipica-suarez/detail.png"
   }

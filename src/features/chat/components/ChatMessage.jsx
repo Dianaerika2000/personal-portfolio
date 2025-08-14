@@ -65,10 +65,9 @@ const ChatMessage = ({ text, from, data, typingDelay, onRendered, onViewMore }) 
                   </div>
                 )}
 
-                {/* 👇 nuevo: mostrar ficha de detalle */}
                 {data.type === "projectDetail" && <ProjectDetailsCard details={data} />}
 
-                {data.technologies && (
+                {data.technologies && data.type !== "projectDetail" &&(
                   <StackGrid
                     technologies={data.technologies}
                     onRendered={onRendered}
