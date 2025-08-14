@@ -76,7 +76,7 @@ export function useChatFlow() {
       ...botMessages.map((msg) => ({
         sender: "bot",
         type: msg.type || "text",
-        text: msg.text || "",
+        text: msg.text || msg.botResponse || "",
         data: msg,
       })),
     ];
