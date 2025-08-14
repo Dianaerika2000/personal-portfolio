@@ -65,7 +65,7 @@ const ContactCard = ({ channels }) => {
                   {label}
                 </span>
                 {subtitle && (
-                  <span className="text-gray-600 dark:text-gray-400 text-sm block">
+                  <span className="text-gray-600 dark:text-gray-400 text-sm block truncate">
                     {subtitle}
                   </span>
                 )}

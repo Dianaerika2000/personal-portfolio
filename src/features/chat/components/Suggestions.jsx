@@ -8,7 +8,7 @@ const Suggestions = ({ suggestions, onSelect }) => {
           key={index}
           onClick={() => onSelect(suggestion)}
           aria-label={`Seleccionar sugerencia ${suggestion}`}
-          className="px-3 py-1 text-sm rounded-full border border-purple-400 text-purple-600 
+          className="px-3 py-1 text-sm rounded-lg border border-purple-400 text-purple-600 
                      hover:bg-purple-100 dark:hover:bg-purple-700 dark:hover:text-white transition-colors"
         >
           {suggestion}
