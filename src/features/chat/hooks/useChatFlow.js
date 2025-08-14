@@ -1,6 +1,6 @@
 import { useState } from "react";
 import chatData from "../model/chatData.json";
-import projectDetails from "../model/projectDetails.json"; // 👈 importar detalles
+import projectDetails from "../model/projectDetails.json";
 
 export function useChatFlow() {
   const [messages, setMessages] = useState([
@@ -17,7 +17,6 @@ export function useChatFlow() {
   const handleUserMessage = (input) => {
     const trimmedInput = input.trim().toLowerCase();
 
-    // 👉 buscar si el input corresponde a "ver más" de algún proyecto
     const projectList =
       chatData.projects?.responses?.find((r) => r.type === "projectList")?.items || [];
 
@@ -50,10 +49,9 @@ export function useChatFlow() {
         projectMessage,
       ]);
       setSuggestions(chatData.projects?.suggestions || []);
-      return; // 👈 importante: parar aquí
+      return;
     }
 
-    // 👉 flujo normal con chatData
     const foundKey = Object.keys(chatData).find((key) => {
       const userMessage = chatData[key]?.userMessage?.toLowerCase();
       return userMessage === trimmedInput;
@@ -88,7 +86,6 @@ export function useChatFlow() {
   };
 
   const simulateAction = (actionId) => {
-    // si llega un id de proyecto, mostrar detalles directo
     if (projectDetails[actionId]) {
       handleUserMessage(actionId);
       return;

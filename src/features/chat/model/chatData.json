@@ -96,6 +96,7 @@
           { "name": "JavaScript" },
           { "name": "TypeScript" },
           { "name": "PHP" },
+          { "name": "Vite", "image": "/images/stack/vite.svg" },
           { "name": "React" },
           { "name": "Laravel" },
           { "name": "NestJS" },
@@ -103,9 +104,11 @@
           { "name": "Flutter" },
           { "name": "PostgreSQL" },
           { "name": "MySQL" },
+          { "name": "Firebase", "image": "/images/stack/firebase.svg" },
           { "name": "Figma" },
-          { "name": "Jira" },
-          { "name": "Moodle" }
+          { "name": "Moodle" },
+          { "name": "AWS", "image": "/images/stack/aws.svg" },
+          { "name": "Jira" }
         ]
       }
     ],
