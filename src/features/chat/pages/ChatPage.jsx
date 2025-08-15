@@ -96,7 +96,7 @@ const ChatPage = () => {
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-[100dvh] md:h-screen lg:h-full">
       <div
         ref={containerRef}
         className="flex-1 overflow-y-auto space-y-4 p-4 transition-colors scroll-smooth"
@@ -111,7 +111,6 @@ const ChatPage = () => {
                 data={msg.data || null}
                 typingDelay={TYPING_DELAY}
                 onRendered={() => {
-                  // Scroll al mensaje cuando se renderiza
                   if (containerRef.current) {
                     containerRef.current.scrollTop = containerRef.current.scrollHeight;
                   }

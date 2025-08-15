@@ -12,9 +12,13 @@ const LayoutContent = () => {
   const { simulateAction } = useChat();
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen overflow-x-hidden">
       <Sidebar onAction={simulateAction} />
-      <main className="flex-1 bg-gray-50 dark:bg-gray-800 p-6 overflow-y-auto">
+      <main className="
+        flex-1 bg-gray-50 dark:bg-gray-800 
+        px-2 sm:px-6 
+        overflow-y-auto overflow-x-hidden"
+      >
         <Outlet />
       </main>
     </div>
