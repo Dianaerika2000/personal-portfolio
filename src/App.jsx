@@ -1,14 +1,7 @@
-import { useState } from 'react'
-import './App.css'
+import AppRouter from './router/AppRouter'
 
 function App() {
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline text-purple-600">
-        Hello, Tailwind with React (using @tailwindcss/vite)!
-      </h1>
-    </>
-  )
+  return <AppRouter/>
 }
 
 export default App

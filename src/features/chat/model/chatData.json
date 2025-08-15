@@ -1,0 +1,193 @@
+{
+  "intro": {
+    "type": "text",
+    "text": "¡Hola! Soy Didibu 🤖, tu guía por mi portafolio. ¿Quieres conocerme, ver mis proyectos o explorar mi stack?",
+    "suggestions": [
+      "¿Quién eres?",
+      "Ver proyectos",
+      "Ver stack tecnológico",
+      "¿Cómo puedo contactarte?",
+      "¿Me pasas tu CV?"
+    ]
+  },
+  "about": {
+    "userMessage": "¿Quién eres?",
+    "responses": [
+      {
+        "type": "profile",
+        "name": "Diana Montaño",
+        "role": "Full Stack Developer",
+        "image": "/images/profile/profile.png",
+        "description": "¡Hola! Soy Diana 👋, desarrolladora full stack apasionada por crear soluciones web y móviles modernas y funcionales. Disfruto trabajar con tecnologías que mejoren procesos y brinden experiencias de usuario memorables.",
+        "experience": "Casi 2 años construyendo aplicaciones de principio a fin, combinando frontend atractivo, backend sólido y bases de datos eficientes."
+      }
+    ],
+    "suggestions": [
+      "Ver proyectos",
+      "Ver stack tecnológico",
+      "¿Cómo puedo contactarte?",
+      "¿Me pasas tu CV?"
+    ]
+  },
+  "projects": {
+    "userMessage": "Ver proyectos",
+    "responses": [
+      {
+        "type": "text",
+        "text": "Estos son algunos de mis proyectos destacados 👇"
+      },
+      {
+        "type": "projectList",
+        "items": [
+          {
+            "id": "certificacion-aulas-virtuales",
+            "title": "Certificación de Aulas Virtuales",
+            "description": "Software que automatiza la revisión y certificación de aulas virtuales en carreras online de la Universidad Autónoma Gabriel René Moreno, optimizando tiempos y esfuerzo en el proceso.",
+            "image": "/images/projects/certificacion-aulas-virtuales/cover.png",
+            "detailsCommand": "Muéstrame detalles del proyecto Certificación de Aulas Virtuales"
+          },
+          {
+            "id": "cartas-cronogramas",
+            "title": "Cartas Descriptivas y Cronogramas",
+            "description": "Software que automatiza la creación y actualización de cartas descriptivas y cronogramas para el DEDTE de la UAGRM, permitiendo cargar datos desde Excel y generar HTML/CSS para integrarlos en Moodle, agilizando el trabajo manual que se realizaba cada semestre.",
+            "image": "/images/projects/cartas-cronogramas/cover.png",
+            "detailsCommand": "Muéstrame detalles del proyecto Cartas y Cronogramas"
+          },
+          {
+            "id": "uagrm-virtual",
+            "title": "UAGRM Virtual",
+            "description": "Aplicación móvil para carreras virtuales de la UAGRM que consume la API de Moodle para acceder a servidores institucionales, mostrando información académica y enviando notificaciones en tiempo real sobre chats, tareas y foros, optimizando la comunicación entre docentes y la comunidad estudiantil.",
+            "image": "/images/projects/uagrm-virtual/cover.png",
+            "detailsCommand": "Muéstrame detalles del proyecto UAGRM Virtual"
+          },
+          {
+            "id": "dragon-challenge",
+            "title": "Dragon Challenge",
+            "description": "Pasante en desarrollo de software, trabajando en backend con NestJS y TypeScript, y colaborando en frontend con Angular. Formé parte de un equipo ágil Scrum, contribuyendo a implementar funcionalidades clave para el avance del proyecto.",
+            "image": "/images/projects/dragon-challenge/cover.png",
+            "detailsCommand": "Muéstrame detalles del proyecto Dragon Challenge"
+          },
+          {
+            "id": "ecommerce-comida-tipica-suarez",
+            "title": "Ecommerce para Pedido en Línea – Comida Típica Suárez",
+            "description": "Software de ecommerce para el restaurante local 'Comida Típica Suárez', que permite a los clientes explorar el menú, agregar platos al carrito y enviar la orden a través de WhatsApp.",
+            "image": "/images/projects/ecommerce-comida-tipica-suarez/cover.png",
+            "detailsCommand": "Muéstrame detalles del proyecto Ecommerce Comida Típica Suárez"
+          }
+        ]
+      }
+    ],
+    "suggestions": [
+      "Ver stack tecnológico",
+      "¿Cómo puedo contactarte?",
+      "¿Me pasas tu CV?"
+    ]
+  },
+  "stack": {
+    "userMessage": "Ver stack tecnológico",
+    "responses": [
+      {
+        "type": "text",
+        "text": "Este es mi stack tecnológico con el que trabajo habitualmente 👇"
+      },
+      {
+        "type": "stackGrid",
+        "technologies": [
+          { "name": "JavaScript" },
+          { "name": "TypeScript" },
+          { "name": "PHP" },
+          { "name": "Vite", "image": "/images/stack/vite.svg" },
+          { "name": "React" },
+          { "name": "Laravel" },
+          { "name": "NestJS" },
+          { "name": "Angular" },
+          { "name": "Flutter" },
+          { "name": "PostgreSQL" },
+          { "name": "MySQL" },
+          { "name": "Firebase", "image": "/images/stack/firebase.svg" },
+          { "name": "Figma" },
+          { "name": "Moodle" },
+          { "name": "AWS", "image": "/images/stack/aws.svg" },
+          { "name": "Jira" }
+        ]
+      }
+    ],
+    "suggestions": [
+      "Ver proyectos",
+      "¿Cómo puedo contactarte?",
+      "¿Me pasas tu CV?"
+    ]
+  },
+  "contact": {
+    "userMessage": "¿Cómo puedo contactarte?",
+    "responses": [
+      {
+        "type": "text",
+        "text": "¡Claro! Aquí tienes mis datos de contacto 👇"
+      },
+      {
+        "type": "contactInfo",
+        "channels": [
+          {
+            "type": "Email",
+            "label": "Email",
+            "subtitle": "dianaerika.montano16@gmail.com",
+            "url": "mailto:dianaerika.montano16@gmail.com",
+            "action": "copy"
+          },
+          {
+            "type": "LinkedIn",
+            "label": "LinkedIn",
+            "subtitle": "diana-montaño-6510a7186",
+            "url": "https://www.linkedin.com/in/diana-monta%C3%B1o-6510a7186/",
+            "action": "open"
+          },
+          {
+            "type": "GitHub",
+            "label": "GitHub",
+            "subtitle": "Dianaerika2000",
+            "url": "https://github.com/Dianaerika2000",
+            "action": "open"
+          }
+        ]
+      }
+    ],
+    "suggestions": [
+      "Ver proyectos",
+      "Ver stack tecnológico",
+      "¿Me pasas tu CV?"
+    ]
+  },
+  "cv": {
+    "userMessage": "¿Me pasas tu CV?",
+    "responses": [
+      {
+        "type": "text",
+        "text": "¡Por supuesto! Puedes descargarlo directamente aquí 👇"
+      },
+      {
+        "type": "cvCard",
+        "title": "Currículum Vitae – Diana Montaño",
+        "fileType": "Archivo PDF",
+        "downloadUrl": "/files/DianaMontaño_cv_ES.pdf",
+        "viewUrl": "/files/DianaMontaño_cv_ES"
+      }
+    ],
+    "suggestions": [
+      "Ver proyectos",
+      "Ver stack tecnológico",
+      "¿Cómo puedo contactarte?"
+    ]
+  },
+  "fallback": {
+    "type": "text",
+    "botResponse": "Aún no soy tan inteligente 😅, pero puedes usar los botones de abajo para explorar mi portafolio.",
+    "suggestions": [
+      "¿Quién eres?",
+      "Ver proyectos",
+      "Ver stack tecnológico",
+      "¿Cómo puedo contactarte?",
+      "¿Me pasas tu CV?"
+    ]
+  }
+}
