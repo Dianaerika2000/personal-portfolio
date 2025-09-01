@@ -18,7 +18,12 @@
       { "name": "TailwindCSS" }
     ],
     "year": 2024,
-    "image": "/images/projects/certificacion-aulas-virtuales/detail.png"
+    "image": "/images/projects/certificacion-aulas-virtuales/detail.png",
+    "links": {
+      "demo": "https://dedte-certifica.uagrm.edu.bo/",
+      "repo": "null",
+      "repoPrivate": true
+    }
   },
   "cartas-cronogramas": {
     "title": "Cartas Descriptivas y Cronogramas",
@@ -39,7 +44,12 @@
       { "name": "CSS" }
     ],
     "year": 2024,
-    "image": "/images/projects/cartas-cronogramas/detail.png"
+    "image": "/images/projects/cartas-cronogramas/detail.png",
+    "links": {
+      "demo": "https://ava.uagrm.edu.bo/login",
+      "repo": "null",
+      "repoPrivate": true
+    }
   },
   "uagrm-virtual": {
     "title": "UAGRM Virtual",
@@ -62,7 +72,12 @@
       { "name": "Moodle" }
     ],
     "year": 2024,
-    "image": "/images/projects/uagrm-virtual/detail.png"
+    "image": "/images/projects/uagrm-virtual/detail.png",
+    "links": {
+      "demo": null,
+      "repo": null,
+      "repoPrivate": true
+    }
   },
   "dragon-challenge": {
     "title": "Dragon Challenge",
@@ -81,7 +96,12 @@
       { "name": "MySql" }
     ],
     "year": 2023,
-    "image": "/images/projects/dragon-challenge/detail.png"
+    "image": "/images/projects/dragon-challenge/detail.png",
+    "links": {
+      "demo": null,
+      "repo": null,
+      "repoPrivate": true
+    }
   },
   "ecommerce-comida-tipica-suarez": {
     "title": "Ecommerce para Pedido en Línea",
@@ -101,6 +121,11 @@
       { "name": "CSS" }
     ],
     "year": 2023,
-    "image": "/images/projects/ecommerce-comida-tipica-suarez/detail.png"
+    "image": "/images/projects/ecommerce-comida-tipica-suarez/detail.png",
+    "links": {
+      "demo": "https://dianaerika2000.github.io/ecommerce-cliente/build",
+      "repo": "https://github.com/Dianaerika2000/ecommerce-cliente.git",
+      "repoPrivate": false
+    }
   }
 }
